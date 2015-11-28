@@ -32,15 +32,12 @@ Zbiór pythonowych rozszerzeń bez GUI dla projektu sK1.
 %setup -q -n sk1libs-%{version}
 
 %build
-CFLAGS="%{rpmcflags}" \
-%{__python} setup.py build
+%py_build
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__python} setup.py install \
-	--optimize=2 \
-	--root=$RPM_BUILD_ROOT
+%py_install
 
 # filters/{export,import,parsing,preview}/*.py must stay (they contain plugins info as comments)
 find $RPM_BUILD_ROOT%{py_sitedir} -name '*.py' | grep -Ev 'filters/(export|import|parsing|preview)/.*\.py$' | xargs rm -f
