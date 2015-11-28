@@ -5,7 +5,7 @@ Summary:	Set of Python non-GUI extensions for sK1 Project
 Summary(pl.UTF-8):	Zbiór pythonowych rozszerzeń bez GUI dla projektu sK1
 Name:		python-sk1libs
 Version:	0.9.1
-Release:	1
+Release:	2
 License:	LGPL v2+
 Group:		Libraries/Python
 #Source0Download: http://code.google.com/p/uniconvertor/downloads/list
