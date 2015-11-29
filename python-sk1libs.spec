@@ -12,6 +12,7 @@ Group:		Libraries/Python
 Source0:	http://uniconvertor.googlecode.com/files/sk1libs-%{version}.tar.gz
 # Source0-md5:	e18088bbc8a105e7535a96f40b80f284
 URL:		http://sk1project.org/
+BuildRequires:	rpmbuild(macros) >= 1.710
 BuildRequires:	freetype-devel >= 2
 BuildRequires:	lcms-devel
 BuildRequires:	libjpeg-devel >= 6b
